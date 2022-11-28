@@ -1,6 +1,6 @@
 node {
     stage('SCM!'){
-        git 'https://github.com/derrianson/java-tomcat-maven-example'
+        git branch : 'master', url: 'https://github.com/derrianson/java-tomcat-maven-example'
     }
     stage('Maven'){
         sh 'mvn package'

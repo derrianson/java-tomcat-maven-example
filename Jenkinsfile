@@ -6,6 +6,6 @@ node {
         sh 'mvn package'
     }
     stage('Archive'){
-        archiveArtifacts artifacts: 'target\\java-tomcat-maven-example.war', followSymlinks: false
+        archiveArtifacts artifacts: 'target\\java-tomcat-maven-exampleRL.war', followSymlinks: false
     }
 }
